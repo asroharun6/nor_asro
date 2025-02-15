@@ -13,3 +13,14 @@
 
 ```bash
 pip install nor_asro
+
+
+from nor_asro.normalizer import NorAsroNormalizer
+
+# Inisialisasi normalizer dengan file Excel
+normalizer = NorAsroNormalizer("path_to_your_excel_file.xlsx")
+
+# Contoh teks
+text = "Woww amin keberpa netaas met ya!"
+result = normalizer.normalize_text(text)
+print(result)  # Output: "wow amin keberapa menetas selamat ya"
